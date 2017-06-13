@@ -1,0 +1,952 @@
+{
+	"id": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+	"name": "Janrain Authentication APIs",
+	"description": "",
+	"order": [
+		"dd0bc29b-71bd-76d5-04ae-ac583c199f0c"
+	],
+	"folders": [
+		{
+			"id": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058",
+			"name": "access",
+			"description": "",
+			"order": [
+				"5e7ce68b-d337-5df3-d477-476872b5e161",
+				"9303aac4-149b-0065-71fe-5533de800a36",
+				"a59dafc9-5472-301d-9c60-037278cdd516",
+				"212c50a7-0d78-670f-a8af-eff47bb07c48",
+				"a7dba8ae-dd0c-ba09-3be6-71b8440ffd2a",
+				"92f8dd06-c8ae-5f98-44cd-8133bcf3db41",
+				"661d1b39-417c-9b9b-3fcf-9ac5cc9fef29"
+			],
+			"owner": "971475",
+			"collectionId": "4e926e4e-9ebe-d0e9-75d4-4cc52a3179af",
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "{{owner_id}}",
+				"password": "{{owner_secret}}",
+				"saveToRequest": true
+			}
+		},
+		{
+			"id": "fc29f158-c409-3a5b-cf8e-608798170247",
+			"name": "oauth",
+			"description": "",
+			"order": [
+				"38f18d32-2e1a-c6f0-4d9d-ee12b05ffbf2",
+				"c5388c0b-2188-1da3-56f8-a25f6888c089",
+				"443245bb-c5e0-0e08-96d1-db8a129c131c",
+				"3d1138f4-f1cd-1ea1-3b82-92daa7961442",
+				"c99ba224-9b57-3b91-7fdb-08f390839342",
+				"113f1ff0-96b0-9b2b-c50e-490748edd45a",
+				"02b6a98e-cb3f-98a0-c7eb-b5b2d159298a",
+				"1881dbbd-5336-d1f5-b6dd-c71bd486576f"
+			],
+			"owner": "971475",
+			"collectionId": "4e926e4e-9ebe-d0e9-75d4-4cc52a3179af"
+		}
+	],
+	"timestamp": 1475679891882,
+	"owner": "971475",
+	"public": false,
+	"hasRequests": true,
+	"requests": [
+		{
+			"id": "02b6a98e-cb3f-98a0-c7eb-b5b2d159298a",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/verify_email_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808407487,
+			"name": "/verify_email_native",
+			"description": "\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "113f1ff0-96b0-9b2b-c50e-490748edd45a",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/register_native_traditional",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "response_type",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808447657,
+			"name": "/register_native_traditional",
+			"description": "\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "1881dbbd-5336-d1f5-b6dd-c71bd486576f",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/token",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "code",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "refresh_token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472736875508,
+			"name": "/token",
+			"description": "#### Example\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d client_secret=edcba54321edcba5432 \\\n    -d code=asdf1234 \\\n    -d redirect_uri=https://www.example.com/oauth_redirect \\\n    -d grant_type=authorization \\\n    https://my-app.janraincapture.com/oauth/token\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "212c50a7-0d78-670f-a8af-eff47bb07c48",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/access/getVerificationCode",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "uuid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "key_attribute",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "key_value",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type_name",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attribute_name",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lifetime",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "{{owner_id}}",
+				"password": "{{owner_secret}}",
+				"saveToRequest": true
+			},
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808698169,
+			"name": "/getVerificationCode",
+			"description": "#### Example Request\n\nThe example shows a request that gets a verification code for setting an\nattribute named \"emailVerified\" in the Person entity with an id of 1.\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d client_secret=edcba54321edcba54321 \\\n    -d id=1 \\\n    -d type_name=Person \\\n    -d attribute_name=emailVerified \\\n    https://my-app.janraincapture.com/access/getVerificationCode\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "38f18d32-2e1a-c6f0-4d9d-ee12b05ffbf2",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/auth_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merge_token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "registration_form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "response_type",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "thin_registration",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472807763874,
+			"name": "/auth_native",
+			"description": "\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "3d1138f4-f1cd-1ea1-3b82-92daa7961442",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/link_account_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "access_token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808461288,
+			"name": "/link_account_native",
+			"description": "#### Example\n\nThis example links a new social provider identity to an existing user\naccount so that the new identity can be used to sign into the user\naccount.\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d locale=en-US\\\n    -d response_type=code\\\n    -d redirect_uri=http://localhost\\\n    -d token=c218fae033c5faa70d2403a2c549e24c30b98e8f\\\n    -d access_token=123456789123456789 \\\n    -d flow=standard\\\n    -d flow_version=66d55f6d-76a4-428f-a659-fc765dfb926f \\\n    https://my-app.janraincapture.com/oauth/link_account_native\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "443245bb-c5e0-0e08-96d1-db8a129c131c",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/forgot_password_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808469209,
+			"name": "/forgot_password_native",
+			"description": "\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "5e7ce68b-d337-5df3-d477-476872b5e161",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/access/getAccessToken",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "uuid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "key_attribute",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "key_value",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type_name",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "for_client_id",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "{{owner_id}}",
+				"password": "{{owner_secret}}",
+				"saveToRequest": true
+			},
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808544450,
+			"name": "/getAccessToken",
+			"description": "#### Example Request\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d client_secret=edcba54321edcba54321 \\\n    -d uuid=78907890wxyzwxyz \\\n    -d type_name=user \\\n    https://my-app.janraincapture.com/access/getAccessToken\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "661d1b39-417c-9b9b-3fcf-9ac5cc9fef29",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/update_profile_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "access_token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808430042,
+			"name": "/update_profile_native",
+			"description": "#### Example\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d access_token=123456789123456789 \\\n    -d local=example_locale \\\n    -d form=example_form \\\n    https://my-app.janraincapture.com/oauth/update_profile_native\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "92f8dd06-c8ae-5f98-44cd-8133bcf3db41",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/unlink_account_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "access_token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "identifier_to_remove",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808437881,
+			"name": "/unlink_account_native",
+			"description": "#### Example\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d access_token=123456789123456789 \\\n    -d local=example_locale \\\n    -d identifier_to_remove=https://www.google.com/profiles/123456789123456789123 \\\n    https://my-app.janraincapture.com/oauth/unlink_account_native\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "9303aac4-149b-0065-71fe-5533de800a36",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/access/getAuthorizationCode",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "uuid",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "id",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "key_attribute",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "key_value",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type_name",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "transaction_state",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lifetime",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "for_client_id",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "{{owner_id}}",
+				"password": "{{owner_secret}}",
+				"saveToRequest": true
+			},
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808578192,
+			"name": "/getAuthorizationCode",
+			"description": "#### Example Request\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d client_secret=edcba54321edcba5432 \\\n    -d redirect_uri=http://foo.janraincapture.com/oauth/flags=stay_in_window \\\n    -d '{\"password_recover\": true}' \\\n    -d id=4 \\\n    https://my-app.janraincapture.com/access/getAuthorizationCode\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "a59dafc9-5472-301d-9c60-037278cdd516",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/access/getCreationToken",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "type_name",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "lifetime",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "for_client_id",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "{{owner_id}}",
+				"password": "{{owner_secret}}",
+				"saveToRequest": true
+			},
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808600394,
+			"name": "/getCreationToken",
+			"description": "#### Example Request\n\n```\ncurl -X POST \\\n    -d client_id=12345abcde12345abcde \\\n    -d client_secret=edcba54321edcba5432 \\\n    -d type_name=user \\\n    -d lifetime=3600 \\\n    -d for_client_id=fghi7890fghi7890 \\\n    https://my-app.janraincapture.com/access/getCreationToken\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "a7dba8ae-dd0c-ba09-3be6-71b8440ffd2a",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/access/useVerificationCode",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "verification_code",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"currentHelper": "basicAuth",
+			"helperAttributes": {
+				"id": "basic",
+				"username": "{{owner_id}}",
+				"password": "{{owner_secret}}",
+				"saveToRequest": true
+			},
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472809005015,
+			"name": "/useVerificationCode",
+			"description": "#### Example Request\n\n```\ncurl -X POST \\\n    -d verification_code=12345678912345678912345678912345 \\\n    https://my-app.janraincapture.com/access/useVerificationCode\n```\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "b6b4d235-e6e3-b146-a1d1-e0e294f8a058"
+		},
+		{
+			"id": "c5388c0b-2188-1da3-56f8-a25f6888c089",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/auth_native_traditional",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merge_token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "response_type",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808475768,
+			"name": "/auth_native_traditional",
+			"description": "#### Example Request\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "c99ba224-9b57-3b91-7fdb-08f390839342",
+			"headers": "",
+			"url": "https://{{capture_domain}}.janraincapture.com/oauth/register_native",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "post",
+			"data": [
+				{
+					"key": "client_id",
+					"value": "{{client_id}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow",
+					"value": "{{flow_name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "flow_version",
+					"value": "{{flow_version}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "form",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "locale",
+					"value": "{{locale}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "redirect_uri",
+					"value": "{{redirect_uri}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "response_type",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": "",
+			"time": 1472808455153,
+			"name": "/register_native",
+			"description": "#### Example\n\n\nParameters:\n\n",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"responses": [],
+			"folder": "fc29f158-c409-3a5b-cf8e-608798170247"
+		},
+		{
+			"id": "dd0bc29b-71bd-76d5-04ae-ac583c199f0c",
+			"headers": "",
+			"url": "{{relying_party}}.rpxnow.com/signin/oauth_token",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "757576f9-9387-920a-b5e8-b3d5ad436b0e",
+			"data": [
+				{
+					"key": "token",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provider",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "/signin/oauth_token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1473971854336,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
